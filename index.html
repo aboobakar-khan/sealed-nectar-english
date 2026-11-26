@@ -44,77 +44,73 @@
 
   /* Default Light: Makhtum Paper */
   --bg: #fcfcfa;
-  --surface: #f5f3ed;
-  --surface-alt: #ece9e0;
+  --surface: #f4f2ec;
+  --surface-alt: #ebe8df;
   --surface-elevated: #ffffff;
   --ink: #202b34;
   --ink-strong: #131c23;
-  --muted: #5d6770;
-  --line: #dce2e6;
-  --line-subtle: #e9ecea;
+  --muted: #646e77;
+  --line: rgba(32, 43, 52, 0.10);
+  --line-strong: rgba(32, 43, 52, 0.18);
   --accent: #14565b;
-  --accent-soft: rgba(20, 86, 91, 0.11);
+  --accent-soft: rgba(20, 86, 91, 0.085);
   --accent-ink: #ffffff;
-  --ayat-bg: rgba(20, 86, 91, 0.055);
-  --ayat-border: #14565b;
-  --hadith-bg: rgba(124, 92, 46, 0.06);
-  --hadith-border: #8d6833;
-  --scrollbar-track: #efede6;
-  --scrollbar-thumb: #9aa3aa;
-  --shadow: 0 10px 30px rgba(15, 23, 30, 0.12);
+  --ayat-bg: rgba(20, 86, 91, 0.045);
+  --ayat-border: rgba(20, 86, 91, 0.55);
+  --hadith-bg: rgba(141, 104, 51, 0.05);
+  --hadith-border: rgba(141, 104, 51, 0.55);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(32, 43, 52, 0.24);
+  --shadow: 0 14px 36px rgba(15, 23, 30, 0.10);
 }
 
-:root:has(> head > meta[name="color-scheme"][content="dark"]) {
-  color-scheme: dark;
-}
-:root:has(> head > meta[name="color-scheme"][content="light"]) {
-  color-scheme: light;
-}
+:root:has(> head > meta[name="color-scheme"][content="dark"]) { color-scheme: dark; }
+:root:has(> head > meta[name="color-scheme"][content="light"]) { color-scheme: light; }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     --bg: #1e1e2e;
-    --surface: #181825;
-    --surface-alt: #252538;
-    --surface-elevated: #28283d;
+    --surface: #252538;
+    --surface-alt: #2e2e45;
+    --surface-elevated: #242437;
     --ink: #cdd6f4;
-    --ink-strong: #e2e8ff;
-    --muted: #a6adc8;
-    --line: #313244;
-    --line-subtle: #28283a;
+    --ink-strong: #e4e9ff;
+    --muted: #9ca3bf;
+    --line: rgba(205, 214, 244, 0.09);
+    --line-strong: rgba(205, 214, 244, 0.18);
     --accent: #89b4fa;
-    --accent-soft: rgba(137, 180, 250, 0.15);
+    --accent-soft: rgba(137, 180, 250, 0.11);
     --accent-ink: #11111b;
-    --ayat-bg: rgba(137, 180, 250, 0.07);
-    --ayat-border: #89b4fa;
-    --hadith-bg: rgba(249, 226, 175, 0.06);
-    --hadith-border: #e5c07b;
-    --scrollbar-track: #181825;
-    --scrollbar-thumb: #585b70;
-    --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+    --ayat-bg: rgba(137, 180, 250, 0.055);
+    --ayat-border: rgba(137, 180, 250, 0.55);
+    --hadith-bg: rgba(249, 226, 175, 0.05);
+    --hadith-border: rgba(249, 226, 175, 0.5);
+    --scrollbar-track: transparent;
+    --scrollbar-thumb: rgba(205, 214, 244, 0.24);
+    --shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
   }
 }
 
 :root[data-theme="makhtum"] {
   --bg: #fcfcfa;
-  --surface: #f5f3ed;
-  --surface-alt: #ece9e0;
+  --surface: #f4f2ec;
+  --surface-alt: #ebe8df;
   --surface-elevated: #ffffff;
   --ink: #202b34;
   --ink-strong: #131c23;
-  --muted: #5d6770;
-  --line: #dce2e6;
-  --line-subtle: #e9ecea;
+  --muted: #646e77;
+  --line: rgba(32, 43, 52, 0.10);
+  --line-strong: rgba(32, 43, 52, 0.18);
   --accent: #14565b;
-  --accent-soft: rgba(20, 86, 91, 0.11);
+  --accent-soft: rgba(20, 86, 91, 0.085);
   --accent-ink: #ffffff;
-  --ayat-bg: rgba(20, 86, 91, 0.055);
-  --ayat-border: #14565b;
-  --hadith-bg: rgba(124, 92, 46, 0.06);
-  --hadith-border: #8d6833;
-  --scrollbar-track: #efede6;
-  --scrollbar-thumb: #9aa3aa;
-  --shadow: 0 10px 30px rgba(15, 23, 30, 0.12);
+  --ayat-bg: rgba(20, 86, 91, 0.045);
+  --ayat-border: rgba(20, 86, 91, 0.55);
+  --hadith-bg: rgba(141, 104, 51, 0.05);
+  --hadith-border: rgba(141, 104, 51, 0.55);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(32, 43, 52, 0.24);
+  --shadow: 0 14px 36px rgba(15, 23, 30, 0.10);
 }
 
 :root[data-theme="sepia"] {
@@ -124,19 +120,19 @@
   --surface-elevated: #faf4e6;
   --ink: #3a2e21;
   --ink-strong: #261c12;
-  --muted: #6c5b48;
-  --line: #d6c8aa;
-  --line-subtle: #e2d6bc;
+  --muted: #6e5d4a;
+  --line: rgba(58, 46, 33, 0.11);
+  --line-strong: rgba(58, 46, 33, 0.20);
   --accent: #7c4a1e;
-  --accent-soft: rgba(124, 74, 30, 0.12);
+  --accent-soft: rgba(124, 74, 30, 0.09);
   --accent-ink: #fffaf0;
-  --ayat-bg: rgba(124, 74, 30, 0.065);
-  --ayat-border: #8b5526;
-  --hadith-bg: rgba(71, 102, 74, 0.065);
-  --hadith-border: #4b704f;
-  --scrollbar-track: #e6dac0;
-  --scrollbar-thumb: #9e8c72;
-  --shadow: 0 10px 28px rgba(58, 46, 33, 0.15);
+  --ayat-bg: rgba(124, 74, 30, 0.055);
+  --ayat-border: rgba(124, 74, 30, 0.55);
+  --hadith-bg: rgba(75, 112, 79, 0.055);
+  --hadith-border: rgba(75, 112, 79, 0.55);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(58, 46, 33, 0.25);
+  --shadow: 0 14px 36px rgba(58, 46, 33, 0.14);
 }
 
 :root[data-theme="catppuccin-latte"] {
@@ -145,130 +141,130 @@
   --surface-alt: #dce0e8;
   --surface-elevated: #ffffff;
   --ink: #4c4f69;
-  --ink-strong: #2c2e40;
+  --ink-strong: #2b2d42;
   --muted: #6c6f85;
-  --line: #ccd0da;
-  --line-subtle: #dce0e8;
+  --line: rgba(76, 79, 105, 0.10);
+  --line-strong: rgba(76, 79, 105, 0.18);
   --accent: #1d5fe6;
-  --accent-soft: rgba(29, 95, 230, 0.11);
+  --accent-soft: rgba(29, 95, 230, 0.09);
   --accent-ink: #ffffff;
-  --ayat-bg: rgba(29, 95, 230, 0.06);
-  --ayat-border: #1d5fe6;
-  --hadith-bg: rgba(64, 160, 43, 0.065);
-  --hadith-border: #40a02b;
-  --scrollbar-track: #e6e9ef;
-  --scrollbar-thumb: #8c8fa1;
-  --shadow: 0 10px 28px rgba(76, 79, 105, 0.14);
+  --ayat-bg: rgba(29, 95, 230, 0.05);
+  --ayat-border: rgba(29, 95, 230, 0.55);
+  --hadith-bg: rgba(64, 160, 43, 0.055);
+  --hadith-border: rgba(64, 160, 43, 0.55);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(76, 79, 105, 0.24);
+  --shadow: 0 14px 36px rgba(76, 79, 105, 0.12);
 }
 
 :root[data-theme="catppuccin-mocha"] {
   --bg: #1e1e2e;
-  --surface: #181825;
-  --surface-alt: #252538;
-  --surface-elevated: #28283d;
+  --surface: #252538;
+  --surface-alt: #2e2e45;
+  --surface-elevated: #242437;
   --ink: #cdd6f4;
-  --ink-strong: #e2e8ff;
-  --muted: #a6adc8;
-  --line: #313244;
-  --line-subtle: #28283a;
+  --ink-strong: #e4e9ff;
+  --muted: #9ca3bf;
+  --line: rgba(205, 214, 244, 0.09);
+  --line-strong: rgba(205, 214, 244, 0.18);
   --accent: #89b4fa;
-  --accent-soft: rgba(137, 180, 250, 0.15);
+  --accent-soft: rgba(137, 180, 250, 0.11);
   --accent-ink: #11111b;
-  --ayat-bg: rgba(137, 180, 250, 0.07);
-  --ayat-border: #89b4fa;
-  --hadith-bg: rgba(249, 226, 175, 0.06);
-  --hadith-border: #f9e2af;
-  --scrollbar-track: #181825;
-  --scrollbar-thumb: #585b70;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --ayat-bg: rgba(137, 180, 250, 0.055);
+  --ayat-border: rgba(137, 180, 250, 0.55);
+  --hadith-bg: rgba(249, 226, 175, 0.05);
+  --hadith-border: rgba(249, 226, 175, 0.5);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(205, 214, 244, 0.24);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 :root[data-theme="tokyo-night"] {
   --bg: #1a1b26;
-  --surface: #16161e;
-  --surface-alt: #24283b;
-  --surface-elevated: #24283b;
+  --surface: #222536;
+  --surface-alt: #292e42;
+  --surface-elevated: #222536;
   --ink: #c0caf5;
   --ink-strong: #dde4ff;
-  --muted: #9aa5ce;
-  --line: #292e42;
-  --line-subtle: #222638;
+  --muted: #909bc4;
+  --line: rgba(192, 202, 245, 0.09);
+  --line-strong: rgba(192, 202, 245, 0.18);
   --accent: #7aa2f7;
-  --accent-soft: rgba(122, 162, 247, 0.15);
+  --accent-soft: rgba(122, 162, 247, 0.11);
   --accent-ink: #15161e;
-  --ayat-bg: rgba(122, 162, 247, 0.07);
-  --ayat-border: #7aa2f7;
-  --hadith-bg: rgba(158, 206, 106, 0.065);
-  --hadith-border: #9ece6a;
-  --scrollbar-track: #16161e;
-  --scrollbar-thumb: #565f89;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.48);
+  --ayat-bg: rgba(122, 162, 247, 0.055);
+  --ayat-border: rgba(122, 162, 247, 0.55);
+  --hadith-bg: rgba(158, 206, 106, 0.055);
+  --hadith-border: rgba(158, 206, 106, 0.5);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(192, 202, 245, 0.24);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.48);
 }
 
 :root[data-theme="rose-pine"] {
   --bg: #191724;
-  --surface: #1f1d2e;
-  --surface-alt: #26233a;
-  --surface-elevated: #2a273f;
+  --surface: #211f32;
+  --surface-alt: #2a273f;
+  --surface-elevated: #242136;
   --ink: #e0def4;
   --ink-strong: #f2f0ff;
   --muted: #908caa;
-  --line: #393552;
-  --line-subtle: #2b2840;
+  --line: rgba(224, 222, 244, 0.09);
+  --line-strong: rgba(224, 222, 244, 0.18);
   --accent: #ebbcba;
-  --accent-soft: rgba(235, 188, 186, 0.15);
+  --accent-soft: rgba(235, 188, 186, 0.11);
   --accent-ink: #191724;
-  --ayat-bg: rgba(156, 207, 216, 0.07);
-  --ayat-border: #9ccfd8;
-  --hadith-bg: rgba(246, 193, 119, 0.065);
-  --hadith-border: #f6c177;
-  --scrollbar-track: #1f1d2e;
-  --scrollbar-thumb: #6e6a86;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.48);
+  --ayat-bg: rgba(156, 207, 216, 0.055);
+  --ayat-border: rgba(156, 207, 216, 0.55);
+  --hadith-bg: rgba(246, 193, 119, 0.05);
+  --hadith-border: rgba(246, 193, 119, 0.5);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(224, 222, 244, 0.24);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.48);
 }
 
 :root[data-theme="one-dark"] {
   --bg: #282c34;
-  --surface: #21252b;
-  --surface-alt: #2c313c;
+  --surface: #2f343f;
+  --surface-alt: #383e4a;
   --surface-elevated: #2f343f;
   --ink: #c5ccd6;
-  --ink-strong: #e2e7ef;
-  --muted: #8b93a2;
-  --line: #3b4048;
-  --line-subtle: #313640;
+  --ink-strong: #e3e8ef;
+  --muted: #8f97a6;
+  --line: rgba(197, 204, 214, 0.09);
+  --line-strong: rgba(197, 204, 214, 0.18);
   --accent: #61afef;
-  --accent-soft: rgba(97, 175, 239, 0.15);
+  --accent-soft: rgba(97, 175, 239, 0.11);
   --accent-ink: #1b1f26;
-  --ayat-bg: rgba(97, 175, 239, 0.07);
-  --ayat-border: #61afef;
-  --hadith-bg: rgba(229, 192, 123, 0.065);
-  --hadith-border: #e5c07b;
-  --scrollbar-track: #21252b;
-  --scrollbar-thumb: #5c6370;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.44);
+  --ayat-bg: rgba(97, 175, 239, 0.055);
+  --ayat-border: rgba(97, 175, 239, 0.55);
+  --hadith-bg: rgba(229, 192, 123, 0.05);
+  --hadith-border: rgba(229, 192, 123, 0.5);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(197, 204, 214, 0.24);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.44);
 }
 
 :root[data-theme="everforest"] {
   --bg: #2d353b;
-  --surface: #272e33;
-  --surface-alt: #343f44;
-  --surface-elevated: #384348;
+  --surface: #343f44;
+  --surface-alt: #3d484d;
+  --surface-elevated: #343f44;
   --ink: #d3c6aa;
   --ink-strong: #eae0c8;
   --muted: #9da9a0;
-  --line: #424d53;
-  --line-subtle: #374147;
+  --line: rgba(211, 198, 170, 0.10);
+  --line-strong: rgba(211, 198, 170, 0.19);
   --accent: #a7c080;
-  --accent-soft: rgba(167, 192, 128, 0.15);
+  --accent-soft: rgba(167, 192, 128, 0.11);
   --accent-ink: #232a2e;
-  --ayat-bg: rgba(167, 192, 128, 0.075);
-  --ayat-border: #a7c080;
-  --hadith-bg: rgba(219, 188, 127, 0.065);
-  --hadith-border: #dbbc7f;
-  --scrollbar-track: #272e33;
-  --scrollbar-thumb: #627067;
-  --shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
+  --ayat-bg: rgba(167, 192, 128, 0.06);
+  --ayat-border: rgba(167, 192, 128, 0.55);
+  --hadith-bg: rgba(219, 188, 127, 0.055);
+  --hadith-border: rgba(219, 188, 127, 0.5);
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: rgba(211, 198, 170, 0.24);
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.42);
 }
 
 @media (forced-colors: active) {
@@ -282,7 +278,7 @@
     --ink-strong: CanvasText;
     --muted: GrayText;
     --line: CanvasText;
-    --line-subtle: GrayText;
+    --line-strong: CanvasText;
     --accent: LinkText;
     --accent-soft: Highlight;
     --accent-ink: HighlightText;
@@ -299,7 +295,6 @@ html {
   scroll-behavior: smooth;
   accent-color: var(--accent);
 }
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
@@ -316,22 +311,21 @@ body {
   font-family: var(--font-sans);
 }
 
-/* Reading Progress Bar */
+/* Hairline Top Reading Progress */
 .read-progress {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   z-index: 60;
   pointer-events: none;
-  background: transparent;
 }
 .read-progress-fill {
   height: 100%;
   width: 0%;
   background: var(--accent);
-  transform-origin: left;
+  opacity: 0.85;
 }
 
 /* Skip Link */
@@ -340,47 +334,51 @@ body {
   left: -9999px;
   top: 8px;
   z-index: 100;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
   background: var(--accent);
   color: var(--accent-ink);
   font-family: var(--font-sans);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
 }
-.skip-link:focus {
-  left: 16px;
-}
+.skip-link:focus { left: 16px; }
 
-/* Header / Book Index Masthead */
+/* Minimal Editorial Header */
 .site-header {
-  max-width: 1340px;
+  max-width: 1320px;
   margin: auto;
-  padding: 34px 32px 24px;
+  padding: 36px 32px 24px;
   border-bottom: 1px solid var(--line);
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 32px;
+  gap: 16px 32px;
   align-items: flex-end;
   justify-content: space-between;
 }
 .site-header-main {
-  max-width: 720px;
+  max-width: 680px;
 }
-.eyebrow, .count, .number {
+.eyebrow {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+}
+.count, .number {
   font-size: 12.5px;
-  letter-spacing: 0.06em;
   color: var(--muted);
 }
 .site-header h1 {
-  font-size: clamp(1.6rem, 2.5vw, 2.15rem);
-  line-height: 1.22;
-  margin: 8px 0 6px;
+  font-size: clamp(1.6rem, 2.4vw, 2.05rem);
+  font-weight: 600;
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  margin: 6px 0 8px;
   color: var(--ink-strong);
 }
 .site-header p {
   margin: 0;
-  font-size: 0.96rem;
+  font-size: 0.94rem;
   color: var(--muted);
   line-height: 1.55;
 }
@@ -392,17 +390,17 @@ body {
   gap: 8px;
 }
 
-/* Study Controls */
+/* Quiet Hairline Controls */
 .ctrl-btn, .ctrl-group {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   border: 1px solid var(--line);
-  background: var(--surface);
+  background: transparent;
   color: var(--ink);
-  border-radius: 9px;
+  border-radius: 8px;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 12.5px;
   line-height: 1.2;
 }
 .ctrl-btn {
@@ -410,15 +408,16 @@ body {
   cursor: pointer;
   font-weight: 500;
   text-decoration: none;
-  transition: background-color 0.15s ease, border-color 0.15s ease;
+  transition: background-color 0.14s ease, border-color 0.14s ease;
 }
 .ctrl-btn:hover {
-  background: var(--surface-alt);
-  border-color: var(--muted);
+  background: var(--surface);
+  border-color: var(--line-strong);
   text-decoration: none;
 }
 .ctrl-btn:focus-visible,
 .icon-btn:focus-visible,
+.toc-mini-btn:focus-visible,
 .theme-opt:focus-visible,
 .toc-search:focus-visible,
 .sidebar-select:focus-visible,
@@ -435,38 +434,39 @@ a:focus-visible {
   appearance: none;
   border: 0;
   background: transparent;
-  color: var(--ink);
+  color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 600;
-  padding: 5px 9px;
-  border-radius: 7px;
+  font-size: 12.5px;
+  font-weight: 500;
+  padding: 5px 8px;
+  border-radius: 6px;
   cursor: pointer;
   line-height: 1.2;
+  transition: background-color 0.14s ease, color 0.14s ease;
 }
 .icon-btn:hover {
-  background: var(--surface-alt);
+  background: var(--surface);
+  color: var(--ink);
 }
 .size-readout {
   font-size: 12px;
   color: var(--muted);
   padding: 0 4px;
-  min-width: 38px;
+  min-width: 34px;
   text-align: center;
   font-variant-numeric: tabular-nums;
 }
 
 .theme-dot {
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  border: 1px solid var(--line);
   flex: none;
   display: inline-block;
 }
 .resume-btn {
   color: var(--accent);
-  border-color: var(--accent);
+  border-color: var(--line-strong);
   background: var(--accent-soft);
 }
 .resume-btn[hidden] { display: none; }
@@ -476,13 +476,13 @@ a:focus-visible {
   position: fixed;
   inset: auto;
   margin: 0;
-  padding: 8px;
-  border: 1px solid var(--line);
+  padding: 6px;
+  border: 1px solid var(--line-strong);
   border-radius: 12px;
   background: var(--surface-elevated);
   color: var(--ink);
   box-shadow: var(--shadow);
-  width: min(290px, calc(100vw - 24px));
+  width: min(272px, calc(100vw - 24px));
   z-index: 90;
 }
 .theme-popover:not([data-open="true"]):not(:popover-open) {
@@ -490,15 +490,13 @@ a:focus-visible {
 }
 .theme-popover-head {
   font-size: 11.5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-weight: 500;
   color: var(--muted);
-  padding: 4px 8px 6px;
+  padding: 6px 10px 4px;
 }
 .theme-grid {
   display: grid;
-  gap: 3px;
+  gap: 2px;
 }
 .theme-opt {
   display: flex;
@@ -506,28 +504,30 @@ a:focus-visible {
   justify-content: space-between;
   gap: 10px;
   width: 100%;
-  border: 1px solid transparent;
+  border: 0;
   background: transparent;
   color: var(--ink);
-  padding: 7px 9px;
+  padding: 7px 10px;
   border-radius: 8px;
   cursor: pointer;
   font-family: var(--font-sans);
   font-size: 13px;
+  font-weight: 400;
   text-align: left;
+  transition: background-color 0.12s ease;
 }
 .theme-opt:hover {
-  background: var(--surface-alt);
+  background: var(--surface);
 }
 .theme-opt[aria-checked="true"] {
   background: var(--accent-soft);
-  border-color: var(--accent);
-  font-weight: 600;
+  color: var(--ink-strong);
+  font-weight: 500;
 }
 .theme-opt-left {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 10px;
   min-width: 0;
 }
 .theme-swatches {
@@ -536,12 +536,12 @@ a:focus-visible {
   gap: 2px;
   padding: 2px 4px;
   border-radius: 99px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-strong);
   flex: none;
 }
 .theme-swatches span {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   display: block;
 }
@@ -551,20 +551,17 @@ a:focus-visible {
   flex: none;
 }
 
-/* Mobile Sticky Reading Bar (hidden on desktop) */
-.mobile-bar {
-  display: none;
-}
+.mobile-bar { display: none; }
 
 /* Main 2-Column Layout */
 .layout {
   display: grid;
-  grid-template-columns: 332px minmax(0, 1fr);
-  max-width: 1340px;
+  grid-template-columns: 312px minmax(0, 1fr);
+  max-width: 1320px;
   margin: auto;
 }
 
-/* Desktop Sidebar */
+/* Desktop Minimalist Sidebar (sits directly on canvas, separated by quiet hairline) */
 .drawer {
   position: sticky;
   top: 0;
@@ -579,23 +576,23 @@ a:focus-visible {
   max-height: none;
   overflow: visible;
 }
-.drawer-scroller {
-  height: 100%;
-}
+.drawer-scroller { height: 100%; }
 .toc-sheet {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: var(--surface);
+  background: var(--bg);
   border-right: 1px solid var(--line);
   font-size: 13px;
   line-height: 1.5;
+  transition: box-shadow 0.25s ease;
+}
+.toc-sheet.is-nudged {
+  box-shadow: inset -2px 0 0 var(--accent);
 }
 
 .toc-top {
-  padding: 18px 16px 12px 18px;
-  border-bottom: 1px solid var(--line);
-  background: var(--surface);
+  padding: 20px 16px 12px 24px;
   flex: none;
 }
 .toc-title-row {
@@ -603,7 +600,7 @@ a:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .toc-title-wrap {
   display: flex;
@@ -612,14 +609,15 @@ a:focus-visible {
   min-width: 0;
 }
 .toc-title-row h2 {
-  font-size: 14.5px;
-  font-weight: 700;
+  font-size: 13.5px;
+  font-weight: 600;
   margin: 0;
   color: var(--ink-strong);
 }
 .toc-meta {
   font-size: 11.5px;
   color: var(--muted);
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 .toc-actions {
@@ -629,23 +627,25 @@ a:focus-visible {
 }
 .toc-mini-btn {
   appearance: none;
-  border: 1px solid var(--line);
-  background: var(--surface-elevated);
-  color: var(--ink);
+  border: 0;
+  background: transparent;
+  color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 500;
-  padding: 4px 8px;
+  padding: 4px 7px;
   border-radius: 6px;
   cursor: pointer;
   line-height: 1.2;
+  text-decoration: none;
+  transition: background-color 0.14s ease, color 0.14s ease;
 }
 .toc-mini-btn:hover {
-  background: var(--surface-alt);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
 }
-.drawer-close-btn {
-  display: none;
-}
+.drawer-close-btn { display: none; }
 
 .toc-search-wrap {
   position: relative;
@@ -656,66 +656,65 @@ a:focus-visible {
   width: 100%;
   appearance: none;
   border: 1px solid var(--line);
-  background: var(--bg);
+  background: var(--surface);
   color: var(--ink);
   font-family: var(--font-sans);
-  font-size: 13px;
-  padding: 7px 52px 7px 10px;
-  border-radius: 8px;
+  font-size: 12.5px;
+  height: 32px;
+  padding: 0 36px 0 10px;
+  border-radius: 7px;
   line-height: 1.3;
+  transition: border-color 0.14s ease, background-color 0.14s ease;
 }
-.toc-search::placeholder {
-  color: var(--muted);
+.toc-search:focus {
+  background: var(--bg);
+  border-color: var(--line-strong);
 }
-.toc-search::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-}
+.toc-search::placeholder { color: var(--muted); }
+.toc-search::-webkit-search-cancel-button { -webkit-appearance: none; }
 .toc-kbd {
   position: absolute;
   right: 8px;
-  font-size: 11px;
+  font-size: 10.5px;
   color: var(--muted);
   border: 1px solid var(--line);
-  background: var(--surface);
   border-radius: 4px;
   padding: 1px 5px;
+  line-height: 1.3;
   pointer-events: none;
 }
 .toc-clear-btn {
   position: absolute;
   right: 6px;
   border: 0;
-  background: var(--surface-alt);
-  color: var(--ink);
+  background: transparent;
+  color: var(--muted);
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1;
   cursor: pointer;
   display: none;
   align-items: center;
   justify-content: center;
 }
-.toc-clear-btn.is-visible {
-  display: inline-flex;
-}
-.toc-clear-btn.is-visible + .toc-kbd {
-  display: none;
-}
+.toc-clear-btn:hover { color: var(--ink); background: var(--surface-alt); }
+.toc-clear-btn.is-visible { display: inline-flex; }
+.toc-clear-btn.is-visible + .toc-kbd { display: none; }
 
-/* Scrollable TOC List + Scrollspy + Custom Scrollbars */
+/* Scrollable TOC List + Scrollspy */
 .toc-list {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: 8px 10px 18px 12px;
+  padding: 4px 12px 20px 18px;
   scroll-target-group: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 @supports not (scrollbar-color: auto) {
   .toc-list { scrollbar-width: auto; }
-  .toc-list::-webkit-scrollbar { width: 8px; height: 8px; }
+  .toc-list::-webkit-scrollbar { width: 6px; height: 6px; }
   .toc-list::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 99px; }
   .toc-list::-webkit-scrollbar-track { background: var(--scrollbar-track); }
 }
@@ -724,13 +723,12 @@ a:focus-visible {
   padding: 24px 12px;
   text-align: center;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 12.5px;
 }
 .toc-empty[hidden] { display: none; }
 
 .toc-list details {
-  border-bottom: 1px solid var(--line-subtle);
-  padding: 3px 0;
+  padding: 1px 0;
 }
 .toc-list details[hidden] { display: none; }
 
@@ -739,38 +737,40 @@ a:focus-visible {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 6px;
-  padding: 6px 6px 6px 4px;
+  gap: 8px;
+  padding: 6px 8px 6px 6px;
   border-radius: 7px;
   cursor: pointer;
   user-select: none;
-  position: relative;
+  transition: background-color 0.12s ease;
 }
 .toc-list summary::-webkit-details-marker { display: none; }
 .toc-list summary::before {
-  content: "▸";
-  font-size: 11px;
-  color: var(--muted);
+  content: "";
+  width: 5px;
+  height: 5px;
   flex: none;
-  width: 14px;
-  margin-top: 2px;
-  text-align: center;
-  transition: transform 0.14s ease;
+  margin-top: 6px;
+  margin-left: 2px;
+  border-right: 1.5px solid var(--muted);
+  border-bottom: 1.5px solid var(--muted);
+  transform: rotate(-45deg);
+  transition: transform 0.14s ease, border-color 0.14s ease;
 }
 .toc-list details[open] > summary::before {
-  transform: rotate(90deg);
-  color: var(--accent);
+  transform: rotate(45deg);
+  border-color: var(--ink);
 }
 .toc-list summary:hover {
-  background: var(--surface-alt);
+  background: var(--surface);
 }
 .toc-list summary a {
   flex: 1 1 auto;
-  color: var(--ink-strong);
+  color: var(--ink);
   font-weight: 500;
-  line-height: 1.38;
+  font-size: 13px;
+  line-height: 1.4;
   text-decoration: none;
-  padding: 1px 0;
 }
 .toc-list summary a:hover {
   color: var(--accent);
@@ -780,62 +780,65 @@ a:focus-visible {
   flex: none;
   font-size: 11px;
   color: var(--muted);
-  background: var(--surface-alt);
-  border-radius: 99px;
-  padding: 1px 7px;
-  margin-top: 1px;
+  opacity: 0.7;
+  padding-top: 2px;
   font-variant-numeric: tabular-nums;
 }
 
+/* Active Chapter in Sidebar: quiet, clean, zero text collision */
+.toc-list details.is-active-chapter > summary > a {
+  color: var(--ink-strong);
+  font-weight: 600;
+}
+.toc-list details.is-active-chapter > summary::before {
+  border-color: var(--accent);
+}
+.toc-list details.is-active-chapter > summary .ch-count {
+  color: var(--accent);
+  opacity: 1;
+}
+
 .toc-list ol {
-  margin: 2px 0 8px 11px;
-  padding: 0 0 0 12px;
+  margin: 2px 0 8px 10px;
+  padding: 0;
   border-left: 1px solid var(--line);
   list-style: none;
 }
 .toc-list li {
-  margin: 1px 0;
+  margin: 0;
 }
 .toc-list li[hidden] { display: none; }
 
 .toc-list li a {
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
-  padding: 4px 8px;
-  border-radius: 6px;
+  display: block;
+  padding: 4px 10px 4px 14px;
+  margin-left: -1px;
+  border-left: 2px solid transparent;
+  border-radius: 0 6px 6px 0;
   color: var(--muted);
   text-decoration: none;
   font-size: 12.5px;
-  line-height: 1.4;
-  transition: background-color 0.12s ease, color 0.12s ease;
+  line-height: 1.42;
+  transition: background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
 }
 .toc-list li a:hover {
-  background: var(--surface-alt);
   color: var(--ink);
+  background: var(--surface);
   text-decoration: none;
 }
 
-/* Native Scrollspy :target-current + JS .target-current fallback */
-.toc-list a:is(:target-current, .target-current) {
+/* Scrollspy highlight ONLY on topic links inside <ol> so chapter summaries never get an inset bar collision */
+.toc-list ol a:is(:target-current, .target-current) {
   color: var(--accent);
   background: var(--accent-soft);
-  font-weight: 600;
-  box-shadow: inset 3px 0 0 var(--accent);
-}
-.toc-list details.is-active-chapter > summary {
-  background: var(--surface-alt);
-}
-.toc-list details.is-active-chapter > summary > a {
-  color: var(--accent);
-  font-weight: 600;
+  border-left-color: var(--accent);
+  font-weight: 500;
 }
 
 .toc-footer {
   flex: none;
-  padding: 10px 14px;
+  padding: 10px 16px 12px 24px;
   border-top: 1px solid var(--line);
-  background: var(--surface);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -845,23 +848,27 @@ a:focus-visible {
   flex: 1 1 auto;
   min-width: 0;
   border: 1px solid var(--line);
-  background: var(--bg);
-  color: var(--ink);
+  background: transparent;
+  color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 12.5px;
+  font-size: 12px;
   padding: 5px 8px;
-  border-radius: 7px;
+  border-radius: 6px;
   cursor: pointer;
 }
+.sidebar-select:hover {
+  color: var(--ink);
+  background: var(--surface);
+}
 
-/* Reading View (kept calm, faithful, spacious) */
+/* Reading View (calm, literary, minimal) */
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 main {
-  padding: 20px 52px 64px;
+  padding: 24px 56px 72px;
   min-width: 0;
-  max-width: 82ch;
+  max-width: 78ch;
 }
 .chapter {
   padding-top: 20px;
@@ -879,28 +886,29 @@ article:focus-visible {
 }
 .chapter > h1 {
   font-size: 1.7rem;
+  font-weight: 600;
   line-height: 1.35;
-  margin: 20px 0 5px;
+  margin: 20px 0 6px;
   color: var(--ink-strong);
 }
 .chapter + .chapter {
-  border-top: 2px solid var(--line);
-  margin-top: 52px;
+  border-top: 1px solid var(--line);
+  margin-top: 56px;
 }
 article {
   scroll-margin-top: 24px;
-  padding-top: 18px;
+  padding-top: 20px;
 }
 article h2 {
-  font-size: 1.35rem;
+  font-size: 1.32rem;
+  font-weight: 600;
   line-height: 1.4;
-  margin: 22px 0;
+  margin: 20px 0;
   color: var(--ink-strong);
 }
 .number {
   display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 p { margin: 0 0 1em; }
@@ -909,9 +917,9 @@ li > p { margin: 0.15em 0; }
 .topic-content > p:empty { display: none; }
 
 blockquote {
-  border-left: 3px solid var(--line);
-  margin: 1em 0;
-  padding-left: 1.3em;
+  border-left: 2px solid var(--line-strong);
+  margin: 1.1em 0;
+  padding-left: 1.25em;
 }
 .topic-content dir {
   margin: 1em 0;
@@ -919,27 +927,40 @@ blockquote {
 }
 p.ayat {
   background: var(--ayat-bg);
-  border-left: 3px solid var(--ayat-border);
-  padding: 0.75em 1.1em;
-  border-radius: 0 8px 8px 0;
+  border-left: 2px solid var(--ayat-border);
+  padding: 0.7em 1.05em;
+  border-radius: 0 6px 6px 0;
   margin: 1em 0;
 }
 p.hadith {
   background: var(--hadith-bg);
-  border-left: 3px solid var(--hadith-border);
-  padding: 0.75em 1.1em;
-  border-radius: 0 8px 8px 0;
+  border-left: 2px solid var(--hadith-border);
+  padding: 0.7em 1.05em;
+  border-radius: 0 6px 6px 0;
   margin: 1em 0;
 }
 table { max-width: 100%; border-collapse: collapse; }
-.back { font-size: 12.5px; margin: 26px 0 35px; }
+.back {
+  font-size: 12.5px;
+  margin: 28px 0 36px;
+  color: var(--muted);
+}
+.back a {
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.back a:hover {
+  color: var(--accent);
+}
 .source-image { font-style: italic; color: var(--muted); }
 .notes {
   font-size: 13px;
   line-height: 1.6;
   border-top: 1px solid var(--line);
   padding-top: 20px;
-  margin-top: 50px;
+  margin-top: 56px;
   color: var(--muted);
 }
 .notes strong { color: var(--ink); }
@@ -947,7 +968,7 @@ table { max-width: 100%; border-collapse: collapse; }
 /* Mobile Navigation Drawer (<= 850px) */
 @media (max-width: 850px) {
   .site-header {
-    padding: 22px 20px 18px;
+    padding: 24px 20px 18px;
   }
   .mobile-bar {
     display: flex;
@@ -957,8 +978,8 @@ table { max-width: 100%; border-collapse: collapse; }
     position: sticky;
     top: 0;
     z-index: 40;
-    padding: 9px 14px;
-    background: var(--surface);
+    padding: 8px 14px;
+    background: var(--bg);
     border-bottom: 1px solid var(--line);
   }
   .mobile-bar-left {
@@ -975,15 +996,9 @@ table { max-width: 100%; border-collapse: collapse; }
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .layout {
-    display: block;
-  }
-  main {
-    padding: 14px 20px 48px;
-  }
-  .chapter, article {
-    scroll-margin-top: 64px;
-  }
+  .layout { display: block; }
+  main { padding: 16px 20px 48px; }
+  .chapter, article { scroll-margin-top: 64px; }
 
   .drawer {
     --drawer-width: min(22em, 85dvw, 100dvw - 24px);
@@ -1001,12 +1016,10 @@ table { max-width: 100%; border-collapse: collapse; }
     overflow: visible;
     z-index: 80;
   }
-  .drawer:not(:popover-open):not(.is-open) {
-    display: none;
-  }
+  .drawer:not(:popover-open):not(.is-open) { display: none; }
   .drawer::backdrop {
     background: #000;
-    opacity: calc(var(--drawer-backdrop) * 0.55);
+    opacity: calc(var(--drawer-backdrop) * 0.5);
   }
   .drawer-scroller {
     position: relative;
@@ -1019,9 +1032,7 @@ table { max-width: 100%; border-collapse: collapse; }
     scroll-snap-type: x mandatory;
   }
   @media (prefers-reduced-motion: no-preference) {
-    .drawer-scroller {
-      scroll-behavior: smooth;
-    }
+    .drawer-scroller { scroll-behavior: smooth; }
   }
   .drawer-scroller::after {
     content: "";
@@ -1031,8 +1042,12 @@ table { max-width: 100%; border-collapse: collapse; }
   .toc-sheet {
     height: 100svh;
     scroll-snap-align: start;
+    background: var(--bg);
     box-shadow: var(--shadow);
   }
+  .toc-top { padding: 16px 14px 12px 16px; }
+  .toc-list { padding: 4px 10px 20px 12px; }
+  .toc-footer { padding: 10px 14px 12px 16px; }
   .drawer-close-btn {
     display: inline-flex;
     align-items: center;
@@ -1047,9 +1062,7 @@ table { max-width: 100%; border-collapse: collapse; }
       animation: fade-drawer-backdrop linear both;
       animation-timeline: --drawer-fade;
     }
-    .drawer-scroller {
-      scroll-timeline: --drawer-fade x;
-    }
+    .drawer-scroller { scroll-timeline: --drawer-fade x; }
     @property --drawer-backdrop {
       syntax: "<number>";
       inherits: true;
@@ -1081,7 +1094,7 @@ table { max-width: 100%; border-collapse: collapse; }
 
 <header class="site-header" id="top">
   <div class="site-header-main">
-    <div class="eyebrow">ENGLISH · 48 CHAPTERS · 193 TOPICS</div>
+    <div class="eyebrow">English edition · 48 chapters · 193 topics</div>
     <h1>Ar-Raheeq-Al-Makhtum (The Sealed Nectar)</h1>
     <p>Text exported from the USB-connected phone’s English app, preserving its chapter and topic order.</p>
   </div>
@@ -1094,13 +1107,13 @@ table { max-width: 100%; border-collapse: collapse; }
     </div>
     <button type="button" class="ctrl-btn" id="theme-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="theme-menu">
       <span class="theme-dot" id="theme-dot" style="background:var(--accent)"></span>
-      <span>Theme: <strong id="theme-label">Auto</strong></span>
+      <span>Theme: <span id="theme-label">Auto</span></span>
     </button>
   </div>
 </header>
 
 <div class="theme-popover" id="theme-menu" popover="auto" role="dialog" aria-label="Study themes">
-  <div class="theme-popover-head">Study Theme</div>
+  <div class="theme-popover-head">Study theme</div>
   <div class="theme-grid" role="radiogroup" aria-label="Select study theme">
     <button type="button" class="theme-opt" role="radio" aria-checked="true" data-theme-choice="auto">
       <span class="theme-opt-left"><span class="theme-swatches"><span style="background:#fcfcfa"></span><span style="background:#1e1e2e"></span><span style="background:#14565b"></span></span>System (Auto)</span>
@@ -1144,7 +1157,7 @@ table { max-width: 100%; border-collapse: collapse; }
 <div class="mobile-bar" aria-label="Mobile navigation bar">
   <div class="mobile-bar-left">
     <button type="button" class="ctrl-btn" id="drawer-open" aria-label="Open contents" aria-expanded="false" aria-controls="contents-drawer">Contents</button>
-    <span class="mobile-chapter-label" id="mobile-chapter-label">48 Chapters · 193 Topics</span>
+    <span class="mobile-chapter-label" id="mobile-chapter-label">48 chapters · 193 topics</span>
   </div>
   <button type="button" class="ctrl-btn" id="mobile-theme-btn" aria-haspopup="dialog" aria-controls="theme-menu">Theme</button>
 </div>
@@ -1165,25 +1178,25 @@ table { max-width: 100%; border-collapse: collapse; }
           </div>
         </div>
         <div class="toc-search-wrap">
-          <input type="search" class="toc-search" id="toc-filter" placeholder="Filter chapters or topics…" aria-label="Filter chapters and topics" autocomplete="off">
+          <input type="search" class="toc-search" id="toc-filter" placeholder="Filter chapters or topics" aria-label="Filter chapters and topics" autocomplete="off">
           <button type="button" class="toc-clear-btn" id="toc-clear" aria-label="Clear filter">×</button>
           <span class="toc-kbd" aria-hidden="true">/</span>
         </div>
       </div>
       <div class="toc-list" id="toc-list">
-        <div class="toc-empty" id="toc-empty" hidden>No matching chapters or topics.</div>
+        <div class="toc-empty" id="toc-empty" hidden>No matching chapters or topics</div>
 <details><summary><a href="#chapter-1">1. Location and nature of Arab Tribes</a><span class="ch-count" aria-label="2 topics">2</span></summary><ol><li value="1"><a href="#topic-1">Location of the Arabs</a></li><li value="2"><a href="#topic-2">Arab Tribes</a></li></ol></details><details><summary><a href="#chapter-2">2. Rulership and Princeship among the Arabs</a><span class="ch-count" aria-label="7 topics">7</span></summary><ol><li value="3"><a href="#topic-3">Rulership in Yemen</a></li><li value="4"><a href="#topic-4">Rulership in Heerah</a></li><li value="5"><a href="#topic-5">Rulership in Geographical Syria</a></li><li value="6"><a href="#topic-6">Rulership in Hijaz</a></li><li value="7"><a href="#topic-7">The Reasons of this war have been illustrated in three versions</a></li><li value="8"><a href="#topic-8">Rulership in Pan-Arabia</a></li><li value="9"><a href="#topic-9">The political situation</a></li></ol></details><details><summary><a href="#chapter-3">3. Religions of the Arabs</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="10"><a href="#topic-10">The Religious situation</a></li></ol></details><details><summary><a href="#chapter-4">4. Aspects of Pre-Islamic Arabian Society</a><span class="ch-count" aria-label="3 topics">3</span></summary><ol><li value="11"><a href="#topic-11">Social life of the Arabs</a></li><li value="12"><a href="#topic-12">The Economic Situation</a></li><li value="13"><a href="#topic-13">Ethics</a></li></ol></details><details><summary><a href="#chapter-5">5. The Lineage and Family of Muhammad [pbuh]</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="14"><a href="#topic-14">The prophetic Family</a></li></ol></details><details><summary><a href="#chapter-6">6. Muhammad’s Birth and Forty years prior Prophethood</a><span class="ch-count" aria-label="11 topics">11</span></summary><ol><li value="15"><a href="#topic-15">His Birth</a></li><li value="16"><a href="#topic-16">Babyhood</a></li><li value="17"><a href="#topic-17">Back to his passionate Mother</a></li><li value="18"><a href="#topic-18">To His compassionate Grandfather</a></li><li value="19"><a href="#topic-19">Bahira, the Monk</a></li><li value="20"><a href="#topic-20">The Sacrilegious wars</a></li><li value="21"><a href="#topic-21">Al-Fudoul confederacy</a></li><li value="22"><a href="#topic-22">Muhammad’s [pbuh] Early Job</a></li><li value="23"><a href="#topic-23">His Marriage to Khadijah</a></li><li value="24"><a href="#topic-24">Rebuilding Al-Ka‘bah and the Arbitration Issue</a></li><li value="25"><a href="#topic-25">A Rapid Review of Muhammad’s Biography before commissioning of the</a></li></ol></details><details><summary><a href="#chapter-7">7. In the Shade of the Message and Prophethood</a><span class="ch-count" aria-label="6 topics">6</span></summary><ol><li value="26"><a href="#topic-26">In the Cave of Hira</a></li><li value="27"><a href="#topic-27">Gabriel brings down the Revelation</a></li><li value="28"><a href="#topic-28">Interruption of Revelation</a></li><li value="29"><a href="#topic-29">Once more, Gabriel brings Allah’s Revelation</a></li><li value="30"><a href="#topic-30">Some details pertinent to the successive stages of Revelation</a></li><li value="31"><a href="#topic-31">Proclaiming Allah, the All-High; and the Immediate Constituents</a></li></ol></details><details><summary><a href="#chapter-8">8. Phases and stages of the call: The First Stage: Strife in the Way of the Call</a><span class="ch-count" aria-label="4 topics">4</span></summary><ol><li value="32"><a href="#topic-32">Three years of Secret Call</a></li><li value="33"><a href="#topic-33">The Early Converts</a></li><li value="34"><a href="#topic-34">As-Salat (the Prayer)</a></li><li value="35"><a href="#topic-35">The Quraishites learn about the Call</a></li></ol></details><details><summary><a href="#chapter-9">9. The Second Phase: Open Preaching</a><span class="ch-count" aria-label="20 topics">20</span></summary><ol><li value="36"><a href="#topic-36">First Revelation regarding the Preaching</a></li><li value="37"><a href="#topic-37">Calling the Closest Kinspeople</a></li><li value="38"><a href="#topic-38">On Mount As-Safa</a></li><li value="39"><a href="#topic-39">Shouting the Truth and the Polytheists’ Reaction</a></li><li value="40"><a href="#topic-40">An Advisory Council to debar Pilgrims from Muhammad’s Cal</a></li><li value="41"><a href="#topic-41">Attempts made to check the Onward March of Islam</a></li><li value="42"><a href="#topic-42">Persecutions</a></li><li value="43"><a href="#topic-43">The House of Al-Arqum</a></li><li value="44"><a href="#topic-44">The First Migration to Abyssinia (Ethiopia)</a></li><li value="45"><a href="#topic-45">Quraish’s Machination against the Emigrants</a></li><li value="46"><a href="#topic-46">Once more Quraish approaches Abu Talib</a></li><li value="47"><a href="#topic-47">The Tyrants’ Decision to kill the Prophet [pbuh]</a></li><li value="48"><a href="#topic-48">The Conversion of Hamzah bin ‘Abdul-Muttalib</a></li><li value="49"><a href="#topic-49">The Conversion of ‘Umar bin Al-Khattab</a></li><li value="50"><a href="#topic-50">Quraish’s Representative negotiates with the Messenger of Allah SWT</a></li><li value="51"><a href="#topic-51">Abu Talib assmbles Bani Hashim and Bani Al-Muttalib</a></li><li value="52"><a href="#topic-52">General Social Boycott</a></li><li value="53"><a href="#topic-53">The Final Phase of the Diplomacy of Negotiation</a></li><li value="54"><a href="#topic-54">The Year of Grief</a></li><li value="55"><a href="#topic-55">Factors inspiring patience and perserverance</a></li></ol></details><details><summary><a href="#chapter-10">10. The Third Phase: Calling unto Islam beyond Makkah</a><span class="ch-count" aria-label="3 topics">3</span></summary><ol><li value="56"><a href="#topic-56">Islam being introduced to Arabian Tribes and Individuals</a></li><li value="57"><a href="#topic-57">Hope inspiring Breezes from the Madinese</a></li><li value="58"><a href="#topic-58">Marriage of the Prophet [pbuh] to ‘Aisha [R]</a></li></ol></details><details><summary><a href="#chapter-11">11. Al-Isra’ and Al-Mir‘raj</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="59"><a href="#topic-59">The Miraculous Night Journey from Makkah to the Farthest Mosque in Jerusalem</a></li></ol></details><details><summary><a href="#chapter-12">12. The First ‘Aqabah Pledge</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="60"><a href="#topic-60">The Muslim Envoy in Madinah</a></li></ol></details><details><summary><a href="#chapter-13">13. The Second ‘Aqabah Pledge</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="61"><a href="#topic-61">The Second ‘Aqabah Pledge</a></li></ol></details><details><summary><a href="#chapter-14">14. The Vanguard of Migration (in the Cause of Allah)</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="62"><a href="#topic-62">The Vanguard of Migration (in the Cause of Allah)</a></li></ol></details><details><summary><a href="#chapter-15">15. In An-Nadwah (Council) House The Parliament of Quraish</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="63"><a href="#topic-63">In An-Nadwah (Council) House The Parliament of Quraish</a></li></ol></details><details><summary><a href="#chapter-16">16. Migration of the Prophet [pbuh]</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="64"><a href="#topic-64">Migration of the Prophet [pbuh]</a></li></ol></details><details><summary><a href="#chapter-17">17. Life in Madinah</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="65"><a href="#topic-65">Life in Madinah</a></li></ol></details><details><summary><a href="#chapter-18">18. The First Phase: The Status Quo in Madinah at the Time of Emigration</a><span class="ch-count" aria-label="11 topics">11</span></summary><ol><li value="66"><a href="#topic-66">A New Society being built</a></li><li value="67"><a href="#topic-67">A Charter of Islamic Alliance</a></li><li value="68"><a href="#topic-68">A Cooperation and Non-Aggression Pact with the Jews</a></li><li value="69"><a href="#topic-69">The Prophet on the Battlefield</a></li><li value="70"><a href="#topic-70">Pre-Badr Missions and Invasions</a></li><li value="71"><a href="#topic-71">The Battle of Badr - The First Decisive Battle in the History of Islam</a></li><li value="72"><a href="#topic-72">Reason of the Battle</a></li><li value="73"><a href="#topic-73">Some Significant Instances of Devotion</a></li><li value="74"><a href="#topic-74">Reaction in Makkah</a></li><li value="75"><a href="#topic-75">Madinah receives the News of Victory</a></li><li value="76"><a href="#topic-76">The Battle of Badr in its Qur’anic Context</a></li></ol></details><details><summary><a href="#chapter-19">19. The Military Activities between Badr and Uhud</a><span class="ch-count" aria-label="9 topics">9</span></summary><ol><li value="77"><a href="#topic-77">Al-Kudr Invasion</a></li><li value="78"><a href="#topic-78">An Attempt on the Life of the Prophet [pbuh]</a></li><li value="79"><a href="#topic-79">Invasion of Bani Qainuqa</a></li><li value="80"><a href="#topic-80">The Qainuqa‘ Jews breach the Covenant</a></li><li value="81"><a href="#topic-81">As-Sawiq Invasion</a></li><li value="82"><a href="#topic-82">Dhi Amr Invasion</a></li><li value="83"><a href="#topic-83">Ka‘b bin Al-Ashraf, killed</a></li><li value="84"><a href="#topic-84">The Invasion of Buhran</a></li><li value="85"><a href="#topic-85">Zaid bin Harithah leads a Compaign on the Trade Routes of Quraish</a></li></ol></details><details><summary><a href="#chapter-20">20. The Battle of Uhud</a><span class="ch-count" aria-label="23 topics">23</span></summary><ol><li value="86"><a href="#topic-86">A Consultation Assembly for a Defence Plan</a></li><li value="87"><a href="#topic-87">Dividing the Islamic Army into phalanxes and Departure to the Battlefield</a></li><li value="88"><a href="#topic-88">Parading the Army</a></li><li value="89"><a href="#topic-89">Passing the Night between Uhud and Madinah</a></li><li value="90"><a href="#topic-90">The Rebellion of ‘Abdullah bin Ubai and his Followers</a></li><li value="91"><a href="#topic-91">The Remainder of the Islamic Army are on the Move to Uhud</a></li><li value="92"><a href="#topic-92">The Defence Plan</a></li><li value="93"><a href="#topic-93">The Messenger of Allah SWT implants the Spirit of Bravery among his</a></li><li value="94"><a href="#topic-94">Recruitment of the Makkan Army</a></li><li value="95"><a href="#topic-95">Political Manoeuvres of Quraish</a></li><li value="96"><a href="#topic-96">The effort of Quraishite women at waging the Zeal of Men</a></li><li value="97"><a href="#topic-97">The Combat</a></li><li value="98"><a href="#topic-98">Assassination of Asadullah (the Lion of Allah) Hamzah bin ‘Abdul</a></li><li value="99"><a href="#topic-99">Bringing the Situation under Control</a></li><li value="100"><a href="#topic-100">From his wife’s lap to Sword-fights and Sorrows</a></li><li value="101"><a href="#topic-101">The Contribution of the Archers squad to the Battle</a></li><li value="102"><a href="#topic-102">The Archers’s Fatal Mistake</a></li><li value="103"><a href="#topic-103">The Most Awkward Hour in the Messenger’s Life</a></li><li value="104"><a href="#topic-104">Mutilation of the Martyrs</a></li><li value="105"><a href="#topic-105">Burial of the Martyrs</a></li><li value="106"><a href="#topic-106">Hamrâ’ Al-Asad Invasion</a></li><li value="107"><a href="#topic-107">The Observations of the Noble Qur’ân on the Battle of Uhud</a></li><li value="108"><a href="#topic-108">Lessons and Moralities</a></li></ol></details><details><summary><a href="#chapter-21">21. Military Platoons and Missions between the Battle of Uhud and the Battle of the</a><span class="ch-count" aria-label="8 topics">8</span></summary><ol><li value="109"><a href="#topic-109">Abi Salamah Mission</a></li><li value="110"><a href="#topic-110">An Errand led by ‘Abdullah bin Unais</a></li><li value="111"><a href="#topic-111">The Event of Ar-Raji</a></li><li value="112"><a href="#topic-112">The Tragedy of Ma‘una Well</a></li><li value="113"><a href="#topic-113">Bani An-Nadeer Invasion</a></li><li value="114"><a href="#topic-114">The Invasion of Najd</a></li><li value="115"><a href="#topic-115">The Invasion of Badr, the Second</a></li><li value="116"><a href="#topic-116">The Invasion of Doumat Al-Jaudal</a></li></ol></details><details><summary><a href="#chapter-22">22. Al-Ahzab (the Confederates) Invasion</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="117"><a href="#topic-117">Al-Ahzab (the Confederates) Invasion</a></li></ol></details><details><summary><a href="#chapter-23">23. Invading Banu Quraiza</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="118"><a href="#topic-118">Invading Banu Quraiza</a></li></ol></details><details><summary><a href="#chapter-24">24. Military Activities continued</a><span class="ch-count" aria-label="2 topics">2</span></summary><ol><li value="119"><a href="#topic-119">Bani Lihyan Invasion</a></li><li value="120"><a href="#topic-120">Expeditions and Delegations continued</a></li></ol></details><details><summary><a href="#chapter-25">25. Bani Al-Mustaliq (Muraisi‘) Ghazwah Sha‘ban 6 Hijri</a><span class="ch-count" aria-label="3 topics">3</span></summary><ol><li value="121"><a href="#topic-121">The treacherous Role of the Hypocrites Prior to the Bani Al-Mustaliq</a></li><li value="122"><a href="#topic-122">The wicked Role they played in the Course of the Ghazwah of Bani Al-</a></li><li value="123"><a href="#topic-123">The Slander Affair</a></li></ol></details><details><summary><a href="#chapter-26">26. Delegations and Expeditions following Al-Muraisi‘ Ghazwah</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="124"><a href="#topic-124">Delegations and Expeditions following Al-Muraisi‘ Ghazwah</a></li></ol></details><details><summary><a href="#chapter-27">27. Al-Hudaibiyah Treaty (Dhul Qu‘dah 6 A.H.)</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="125"><a href="#topic-125">Al-Hudaibiya Treaty: Socio Political Impact</a></li></ol></details><details><summary><a href="#chapter-28">28. The Second Stage: A New Phase of Islamic Action</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="126"><a href="#topic-126">The Second Stage: A New Phase of Islamic Action</a></li></ol></details><details><summary><a href="#chapter-29">29. The Prophet’s Plans to spread the Message of Islam to beyond Arabia</a><span class="ch-count" aria-label="8 topics">8</span></summary><ol><li value="127"><a href="#topic-127">A Deputation to Abyssinia (Ethiopia)</a></li><li value="128"><a href="#topic-128">Letter to the Vicegerent of Egypt, called Muqawqas</a></li><li value="129"><a href="#topic-129">A Letter to chosroes, Emperor of Persia</a></li><li value="130"><a href="#topic-130">The Envoy to Caesar, King of Rome</a></li><li value="131"><a href="#topic-131">A Letter to Mundhir bin Sawa, Governor of Bahrain</a></li><li value="132"><a href="#topic-132">A Letter to Haudha bin ‘Ali, Governor of Yamama</a></li><li value="133"><a href="#topic-133">A Letter to Harith bin Abi Shamir Al-Ghassani, King of Damascus</a></li><li value="134"><a href="#topic-134">A Letter to the King of ‘Oman, Jaifer, and his Bother ‘Abd Al-Jalandi</a></li></ol></details><details><summary><a href="#chapter-30">30. Post-Hudaibiyah Hostilities</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="135"><a href="#topic-135">Dhu Qarad Invasion</a></li></ol></details><details><summary><a href="#chapter-31">31. The Conquest of Khaibar (in Moharram, 7 A.H.)</a><span class="ch-count" aria-label="4 topics">4</span></summary><ol><li value="136"><a href="#topic-136">The Actual operation begins</a></li><li value="137"><a href="#topic-137">The Second Part of Khaibar Conquered</a></li><li value="138"><a href="#topic-138">Negotiations</a></li><li value="139"><a href="#topic-139">Distribution of Spoils</a></li></ol></details><details><summary><a href="#chapter-32">32. Sporadic Invasions</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="140"><a href="#topic-140">The Expedition called Dhat-ur-Riqa‘ (in the year 7 A.H.)</a></li></ol></details><details><summary><a href="#chapter-33">33. The Compensatory ‘Umrah (Lesser Pilgrimage)</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="141"><a href="#topic-141">The Compensatory ‘Umrah (Lesser Pilgrimage)</a></li></ol></details><details><summary><a href="#chapter-34">34. The Battle of Mu’tah</a><span class="ch-count" aria-label="2 topics">2</span></summary><ol><li value="142"><a href="#topic-142">Dhat As-Salasil Compaign</a></li><li value="143"><a href="#topic-143">Khadrah Campaign</a></li></ol></details><details><summary><a href="#chapter-35">35. The Conquest of Makkah</a><span class="ch-count" aria-label="2 topics">2</span></summary><ol><li value="144"><a href="#topic-144">Pre-conquest Events</a></li><li value="145"><a href="#topic-145">Preparations for the Attach on Makkah, and the Prophet’s Attempt at</a></li></ol></details><details><summary><a href="#chapter-36">36. The Third Stage Hunain Ghazwah</a><span class="ch-count" aria-label="14 topics">14</span></summary><ol><li value="146"><a href="#topic-146">The Enemy’s march and their Encampment at Awtas</a></li><li value="147"><a href="#topic-147">The war-experienced Man wrongs the Leader’s Judgement</a></li><li value="148"><a href="#topic-148">Reconnoitering the Weapons of the Messenger of Allah SWT</a></li><li value="149"><a href="#topic-149">Reconnoitering the Enemy’s Weapons</a></li><li value="150"><a href="#topic-150">The Messenger of Allah SWT leaves Makkah for Hunain</a></li><li value="151"><a href="#topic-151">The Islamic Army stunned the Archers and the Attackers</a></li><li value="152"><a href="#topic-152">Muslims’ return to the Battlefield, and the fierceness of the Fight</a></li><li value="153"><a href="#topic-153">Reverse of Fortunes and the Enemy’s utter Defeat</a></li><li value="154"><a href="#topic-154">Hot pursuit of the Enemy</a></li><li value="155"><a href="#topic-155">Ta’if Compaign</a></li><li value="156"><a href="#topic-156">The Distribution of the Booty at al-Ji‘ranah</a></li><li value="157"><a href="#topic-157">The Helpers (Al-Ansar) are furious at the Messenger of Allah SWT</a></li><li value="158"><a href="#topic-158">Arrival of the Hawazin Delegation</a></li><li value="159"><a href="#topic-159">Lesser Pilgrimage (Al-‘Umrah) to Makkah and leaving for Madinah</a></li></ol></details><details><summary><a href="#chapter-37">37. Missions and Platoons After the Conquest</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="160"><a href="#topic-160">The Platoons</a></li></ol></details><details><summary><a href="#chapter-38">38. The Invasion of Tabuk in Rajab, in the year 9 A.H.</a><span class="ch-count" aria-label="10 topics">10</span></summary><ol><li value="161"><a href="#topic-161">The underlying Reasons</a></li><li value="162"><a href="#topic-162">General News about the Byzantines and Ghassanide Preparations for War</a></li><li value="163"><a href="#topic-163">Particular News about the Byzantine and Ghassanide preparations for War</a></li><li value="164"><a href="#topic-164">The Muslim Army is leaving for Tabuk</a></li><li value="165"><a href="#topic-165">The Army of Islam at Tabuk</a></li><li value="166"><a href="#topic-166">Returning to Madinah</a></li><li value="167"><a href="#topic-167">The People Who lagged Behind</a></li><li value="168"><a href="#topic-168">The Invasion of Tabuk and its Far-Reaching Ramifications</a></li><li value="169"><a href="#topic-169">The Qur’ânic Verses Relating to this Invasion</a></li><li value="170"><a href="#topic-170">Some Important Events that featured that Year</a></li></ol></details><details><summary><a href="#chapter-39">39. Abu Bakr [R] performs the Pilgrimage</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="171"><a href="#topic-171">Abu Bakr [R] performs the Pilgrimage</a></li></ol></details><details><summary><a href="#chapter-40">40. A Meditation on the Ghazawat</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="172"><a href="#topic-172">A Meditation on the Ghazawat</a></li></ol></details><details><summary><a href="#chapter-41">41. People embrace the Religion of Allah in Large Crowds</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="173"><a href="#topic-173">People embrace the Religion of Allah in Large Crowds</a></li></ol></details><details><summary><a href="#chapter-42">42. The Delegations</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="174"><a href="#topic-174">The Delegations</a></li></ol></details><details><summary><a href="#chapter-43">43. The Success and Impact of the Call</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="175"><a href="#topic-175">The Success and Impact of the Call</a></li></ol></details><details><summary><a href="#chapter-44">44. The Farewell Pilgrimage</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="176"><a href="#topic-176">The Farewell Pilgrimage</a></li></ol></details><details><summary><a href="#chapter-45">45. The Last Expeditions</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="177"><a href="#topic-177">The Last Expeditions</a></li></ol></details><details><summary><a href="#chapter-46">46. The Journey to Allah, the Sublime</a><span class="ch-count" aria-label="13 topics">13</span></summary><ol><li value="178"><a href="#topic-178">Symptoms of Farewell</a></li><li value="179"><a href="#topic-179">The Start of the Disease</a></li><li value="180"><a href="#topic-180">The Last Week</a></li><li value="181"><a href="#topic-181">Five days before death</a></li><li value="182"><a href="#topic-182">Four days before his death</a></li><li value="183"><a href="#topic-183">A Day or Two prior to Death</a></li><li value="184"><a href="#topic-184">A Day before his Death</a></li><li value="185"><a href="#topic-185">The Last day Alive</a></li><li value="186"><a href="#topic-186">The Prophet [pbuh] breathes his Last</a></li><li value="187"><a href="#topic-187">The companions’ concern over the Prophet’s Death</a></li><li value="188"><a href="#topic-188">Umar’s Attitude</a></li><li value="189"><a href="#topic-189">Abu Bakr’s Attitude</a></li><li value="190"><a href="#topic-190">Burial and Farewell Preparations to his Honourable Body</a></li></ol></details><details><summary><a href="#chapter-47">47. The Prophet Household</a><span class="ch-count" aria-label="1 topics">1</span></summary><ol><li value="191"><a href="#topic-191">The Prophet Household</a></li></ol></details><details><summary><a href="#chapter-48">48. The Prophet [pbuh] , Attributes and Manners</a><span class="ch-count" aria-label="2 topics">2</span></summary><ol><li value="192"><a href="#topic-192">Beauty of creation</a></li><li value="193"><a href="#topic-193">The perfection of Soul and Nobility</a></li></ol></details>      </div>
       <div class="toc-footer">
         <select class="sidebar-select" id="sidebar-theme-select" aria-label="Study theme">
-          <option value="auto">Theme: System (Auto)</option>
-          <option value="makhtum">Theme: Makhtum Paper</option>
-          <option value="sepia">Theme: Sepia Study</option>
-          <option value="catppuccin-latte">Theme: Catppuccin Latte</option>
-          <option value="catppuccin-mocha">Theme: Catppuccin Mocha</option>
-          <option value="tokyo-night">Theme: Tokyo Night</option>
-          <option value="rose-pine">Theme: Rosé Pine</option>
-          <option value="one-dark">Theme: One Dark</option>
-          <option value="everforest">Theme: Everforest</option>
+          <option value="auto">Theme · System</option>
+          <option value="makhtum">Theme · Makhtum Paper</option>
+          <option value="sepia">Theme · Sepia Study</option>
+          <option value="catppuccin-latte">Theme · Catppuccin Latte</option>
+          <option value="catppuccin-mocha">Theme · Catppuccin Mocha</option>
+          <option value="tokyo-night">Theme · Tokyo Night</option>
+          <option value="rose-pine">Theme · Rosé Pine</option>
+          <option value="one-dark">Theme · One Dark</option>
+          <option value="everforest">Theme · Everforest</option>
         </select>
         <a class="toc-mini-btn" href="#top">Top ↑</a>
       </div>
@@ -1260,7 +1273,7 @@ table { max-width: 100%; border-collapse: collapse; }
 
   function positionThemeMenu(anchor) {
     var rect = anchor.getBoundingClientRect();
-    var menuW = Math.min(290, window.innerWidth - 24);
+    var menuW = Math.min(272, window.innerWidth - 24);
     var left = Math.min(Math.max(12, rect.right - menuW), window.innerWidth - menuW - 12);
     var top = Math.min(rect.bottom + 8, window.innerHeight - 360);
     themeMenu.style.left = left + "px";
@@ -1281,12 +1294,9 @@ table { max-width: 100%; border-collapse: collapse; }
     }
   }
 
-  if (themeTrigger) {
-    themeTrigger.addEventListener("click", function () { toggleThemeMenu(themeTrigger); });
-  }
-  if (mobileThemeBtn) {
-    mobileThemeBtn.addEventListener("click", function () { toggleThemeMenu(mobileThemeBtn); });
-  }
+  if (themeTrigger) themeTrigger.addEventListener("click", function () { toggleThemeMenu(themeTrigger); });
+  if (mobileThemeBtn) mobileThemeBtn.addEventListener("click", function () { toggleThemeMenu(mobileThemeBtn); });
+
   if (themeMenu && supportsPopover) {
     themeMenu.addEventListener("toggle", function (e) {
       themeTrigger.setAttribute("aria-expanded", e.newState === "open" ? "true" : "false");
@@ -1355,6 +1365,7 @@ table { max-width: 100%; border-collapse: collapse; }
     mainEl = document.querySelector("main");
     if (mainEl) mainEl.id = "main-content";
   }
+  var tocNav = document.getElementById("contents");
   var tocList = document.getElementById("toc-list");
   var tocFilter = document.getElementById("toc-filter");
   var tocClear = document.getElementById("toc-clear");
@@ -1363,6 +1374,7 @@ table { max-width: 100%; border-collapse: collapse; }
   var tocToggleAll = document.getElementById("toc-toggle-all");
   var chapters = Array.prototype.slice.call(tocList.querySelectorAll("details"));
   var tocLinks = Array.prototype.slice.call(tocList.querySelectorAll("a[href^='#']"));
+  var topicLinks = Array.prototype.slice.call(tocList.querySelectorAll("ol a[href^='#']"));
   var mobileChapterLabel = document.getElementById("mobile-chapter-label");
   var headerEl = document.getElementById("top");
   var resumeLink = document.getElementById("resume-link");
@@ -1372,7 +1384,7 @@ table { max-width: 100%; border-collapse: collapse; }
     linkByHref[a.getAttribute("href")] = a;
   });
 
-  /* Clicking a chapter link opens its <details> rather than toggling it shut */
+  /* Clicking a chapter summary link opens its details rather than toggling it shut */
   chapters.forEach(function (det) {
     var sumLink = det.querySelector("summary a");
     if (sumLink) {
@@ -1400,11 +1412,9 @@ table { max-width: 100%; border-collapse: collapse; }
     var q = (tocFilter.value || "").trim().toLowerCase();
     tocClear.classList.toggle("is-visible", q.length > 0);
     if (!q) {
-      var visibleTopics = 0;
       chapters.forEach(function (d) {
         d.hidden = false;
-        var items = d.querySelectorAll("li");
-        items.forEach(function (li) { li.hidden = false; visibleTopics++; });
+        d.querySelectorAll("li").forEach(function (li) { li.hidden = false; });
       });
       tocEmpty.hidden = true;
       tocMeta.textContent = chapters.length + " chapters";
@@ -1459,7 +1469,7 @@ table { max-width: 100%; border-collapse: collapse; }
     });
   }
 
-  /* Mobile Navigation Drawer (<= 850px acts as modal popover drawer; > 850px acts as sticky sidebar) */
+  /* Mobile Navigation Drawer (<= 850px modal popover; > 850px sticky sidebar) */
   var drawer = document.getElementById("contents-drawer");
   var scroller = document.getElementById("drawer-scroller");
   var openBtn = document.getElementById("drawer-open");
@@ -1473,9 +1483,7 @@ table { max-width: 100%; border-collapse: collapse; }
     if (isMobile) {
       drawer.setAttribute("role", "dialog");
       if (supportsPopover) drawer.setAttribute("popover", "manual");
-      if (!drawerIsOpen) {
-        drawer.removeAttribute("aria-modal");
-      }
+      if (!drawerIsOpen) drawer.removeAttribute("aria-modal");
     } else {
       if (drawerIsOpen) forceCloseDrawerInstant();
       drawer.removeAttribute("role");
@@ -1535,7 +1543,6 @@ table { max-width: 100%; border-collapse: collapse; }
   function closeDrawer() {
     if (!mobileMql.matches || !drawerIsOpen) return;
     scroller.scrollTo({ left: scroller.offsetWidth, behavior: "auto" });
-    /* Fallback timer in case reduced-motion or instant snap prevents observer edge firing */
     setTimeout(function () {
       if (drawerIsOpen && scroller.scrollLeft >= scroller.offsetWidth - 4) {
         onDrawerClosed();
@@ -1543,7 +1550,7 @@ table { max-width: 100%; border-collapse: collapse; }
     }, 350);
   }
 
-  if ("IntersectionObserver" in window && drawer && scroller) {
+  if ("IntersectionObserver" in window && drawer && scroller && tocNav) {
     var visibleThreshold = 1 / Math.max(320, window.innerWidth);
     drawerObserver = new IntersectionObserver(function (entries) {
       if (!mobileMql.matches) return;
@@ -1551,13 +1558,12 @@ table { max-width: 100%; border-collapse: collapse; }
       if (entry.intersectionRatio < visibleThreshold) onDrawerClosed();
       if (entry.intersectionRatio >= 0.99) onDrawerOpened();
     }, { root: drawer, threshold: [visibleThreshold, 1] });
-    drawerObserver.observe(document.getElementById("contents"));
+    drawerObserver.observe(tocNav);
   }
 
-  if (!CSS.supports("animation-timeline: scroll()") && scroller && drawer) {
-    var contentsSheet = document.getElementById("contents");
+  if (!CSS.supports("animation-timeline: scroll()") && scroller && drawer && tocNav) {
     scroller.addEventListener("scroll", function () {
-      var w = contentsSheet.offsetWidth || 1;
+      var w = tocNav.offsetWidth || 1;
       var ratio = Math.max(0, Math.min(1, 1 - scroller.scrollLeft / w));
       drawer.style.setProperty("--drawer-backdrop", ratio.toFixed(3));
     }, { passive: true });
@@ -1567,8 +1573,35 @@ table { max-width: 100%; border-collapse: collapse; }
   if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
   if (drawer) {
     drawer.addEventListener("click", function (e) {
-      if (mobileMql.matches && !document.getElementById("contents").contains(e.target)) {
+      if (mobileMql.matches && tocNav && !tocNav.contains(e.target)) {
         closeDrawer();
+      }
+    });
+  }
+
+  /* Fix "Back to contents" links inside the reading view so they work on both mobile and desktop */
+  if (mainEl) {
+    mainEl.addEventListener("click", function (e) {
+      var link = e.target.closest('a[href="#contents"]');
+      if (!link) return;
+      e.preventDefault();
+      if (mobileMql.matches) {
+        openDrawer();
+      } else {
+        if (tocFilter) {
+          tocFilter.focus({ preventScroll: true });
+          tocFilter.select();
+        }
+        var activeEl = tocList.querySelector("ol a.target-current, ol a:target-current, details.is-active-chapter > summary");
+        if (activeEl) {
+          activeEl.scrollIntoView({ block: "center", behavior: "smooth" });
+        } else {
+          tocList.scrollTo({ top: 0, behavior: "smooth" });
+        }
+        if (tocNav) {
+          tocNav.classList.add("is-nudged");
+          setTimeout(function () { tocNav.classList.remove("is-nudged"); }, 700);
+        }
       }
     });
   }
@@ -1582,7 +1615,7 @@ table { max-width: 100%; border-collapse: collapse; }
     });
   });
 
-  /* Keyboard shortcuts: '/' focuses sidebar filter, Escape closes drawer/menu */
+  /* Keyboard shortcuts: '/' focuses sidebar filter, Escape closes drawer */
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {
       if (drawerIsOpen) closeDrawer();
@@ -1616,7 +1649,7 @@ table { max-width: 100%; border-collapse: collapse; }
     if (href === currentActiveHref) return;
     currentActiveHref = href;
 
-    tocLinks.forEach(function (a) {
+    topicLinks.forEach(function (a) {
       var active = a.getAttribute("href") === href;
       a.classList.toggle("target-current", active);
       a.setAttribute("aria-current", active ? "true" : "false");
@@ -1663,7 +1696,6 @@ table { max-width: 100%; border-collapse: collapse; }
     });
   }
 
-  /* Sync initial hash (e.g. #chapter-45) */
   function syncFromHash() {
     if (location.hash && linkByHref[location.hash]) {
       setActiveLink(location.hash, false);
@@ -1675,7 +1707,7 @@ table { max-width: 100%; border-collapse: collapse; }
   var supportsScrollTargetGroup = CSS.supports("scroll-target-group: auto");
   if (supportsScrollTargetGroup) {
     var syncNativeTarget = function () {
-      var nativeActive = tocList.querySelector("a:target-current");
+      var nativeActive = tocList.querySelector("ol a:target-current");
       if (nativeActive) {
         setActiveLink(nativeActive.getAttribute("href"), true);
       }
@@ -1683,7 +1715,6 @@ table { max-width: 100%; border-collapse: collapse; }
     document.addEventListener("scrollend", syncNativeTarget, { passive: true });
   }
 
-  /* IntersectionObserver tracks visible topics (used as fallback for scroll-target-group AND to keep chapter/resume state accurate) */
   var articles = Array.prototype.slice.call(mainEl.querySelectorAll("article[id]"));
   if ("IntersectionObserver" in window && articles.length) {
     var visibleMap = {};
