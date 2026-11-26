@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "title": "Ar-Raheeq-Al-Makhtum (The Sealed Nectar)",
+    "language": "English",
+    "application_label": "Ar-Raheeq-Al-Makhtum",
+    "package_name": "com.quranemajeedapp.org.seerah",
+    "app_version": "1.8",
+    "app_version_code": 9,
+    "exported_at": "2026-11-26T21:49:06.850235+05:30",
+    "source": "assets/arm from the installed app package copied over USB from the user-provided phone",
+    "source_apk_sha256": "dfdf3e30f6f7504f19364fa115ea6d9f355489d0df65340469c9ae23bc5cd4ad",
+    "source_database_sha256": "20a6244bbbdce36595554ada40ea14a3e872fa7c3d9abb62e0481b065a18869d",
+    "chapter_count": 48,
+    "topic_count": 193,
+    "raw_content_character_count": 1025841,
+    "ordering": "Ascending chapter ID, then ascending topic ID; verified against the app chapter list and stored topic headings.",
+    "rendering": "Leading h3 removed where the app does so; backslash-ampersand-ampersand replaced with apostrophe; remaining backslashes removed; h3 markup converted to strong with line breaks, matching Topic.getContent().",
+    "scope": "All chapters and topics contained in this installed English app database. No outside edition or missing passage was substituted.",
+    "source_notes": [
+      "Original source spelling, punctuation, and truncated titles are preserved.",
+      "Topic 25 has different stored TOC and reader titles; both are retained in book.json. The HTML contents uses the TOC title; the reading heading uses the reader title.",
+      "Topic 126 references images/seal.png, which is absent from the installed APK. Its alt text [seal] is retained in readable exports.",
+      "Raw database content and source.sqlite3 preserve the exact source independently of readable rendering.",
+      "The phone app and the user-supplied existing extraction folder were not modified by this export."
+    ]
+  },
+  "validation": {
+    "sqlite_integrity_check": "ok",
+    "chapter_ids_contiguous": true,
+    "topic_ids_contiguous": true,
+    "blank_topics": 0,
+    "orphan_topics": 0,
+    "chapter_topic_counts_match": true,
+    "all_topic_headings_present": true
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2435,
+      "sha256": "90a861f9d3e82cc744a428152d93ff167cfbc69c471ba9a4d09f670f4031d16b"
+    },
+    {
+      "path": "book.json",
+      "bytes": 3108694,
+      "sha256": "2711727ce1320f8bb0083d940fd33d2856e1ae0c1e0aaf0d67cd04d5f4a29e62"
+    },
+    {
+      "path": "book.txt",
+      "bytes": 999113,
+      "sha256": "74fd6aa306f1529e63df54abd0b56cf0bb4cddb2354c2f167573115f70bcd03b"
+    },
+    {
+      "path": "chapters/01-location-and-nature-of-arab-tribes.txt",
+      "bytes": 13878,
+      "sha256": "1e10653f93fa794a80d209c43cc357b144ffd4454b13ef95eaa8ac99e6183dee"
+    },
+    {
+      "path": "chapters/02-rulership-and-princeship-among-the-arabs.txt",
+      "bytes": 23514,
+      "sha256": "e518eef27e0cf67af16b216e178f2fb234df6977d15d353bb3ca5a9310066251"
+    },
+    {
+      "path": "chapters/03-religions-of-the-arabs.txt",
+      "bytes": 16782,
+      "sha256": "37891fe769c755b1b5d5ace9d225da0a8f0f23cc12d28ca9511019952b7cb2be"
+    },
+    {
+      "path": "chapters/04-aspects-of-pre-islamic-arabian-society.txt",
+      "bytes": 11289,
+      "sha256": "66ca4ad28104af92d2d6d21139c140af3cf6e158e78a1484a14522512848da78"
+    },
+    {
+      "path": "chapters/05-the-lineage-and-family-of-muhammad-pbuh.txt",
+      "bytes": 13987,
+      "sha256": "9dfdfb0f60a3727ad58654c5f8e764c54142e48e2257d3f24a646a45846572ee"
+    },
+    {
+      "path": "chapters/06-muhammad-s-birth-and-forty-years-prior-prophethood.txt",
+      "bytes": 23176,
+      "sha256": "0faf0e96b57e78a23a7cf81b2d2562632eb23fd1009559f71d0cf7158da7676d"
+    },
+    {
+      "path": "chapters/07-in-the-shade-of-the-message-and-prophethood.txt",
+      "bytes": 19980,
+      "sha256": "c50d408a0550a16d7ac59ab8eb36a9126bd5db3053cb3da3fe5c8633765fd999"
+    },
+    {
+      "path": "chapters/08-phases-and-stages-of-the-call-the-first-stage-strife-in-the-way-of-the-call.txt",
+      "bytes": 8054,
+      "sha256": "454d57963acdfa0711c8ff5927f3a0dbe5da5c61daff903edae9350e0359dd95"
+    },
+    {
+      "path": "chapters/09-the-second-phase-open-preaching.txt",
+      "bytes": 109522,
+      "sha256": "57a887c998fc9141e808545bb7e84110f47f9041f26d40042587ada4c79ec718"
+    },
+    {
+      "path": "chapters/10-the-third-phase-calling-unto-islam-beyond-makkah.txt",
+      "bytes": 23173,
+      "sha256": "77a5957c7fee7c39811efe831707bb7bc70c5d56cee71ed1796ac0daada55f72"
+    },
+    {
+      "path": "chapters/11-al-isra-and-al-mir-raj.txt",
+      "bytes": 13674,
+      "sha256": "f526ac9f0b9b33f9442010346c833c10ec30b7801d65fd10d3c5c9bec312a1c9"
+    },
+    {
+      "path": "chapters/12-the-first-aqabah-pledge.txt",
+      "bytes": 5498,
+      "sha256": "652e67e06e51f7a4d7f64cd6b1e64e22615acd626ac47425b141c13476eb5c6e"
+    },
+    {
+      "path": "chapters/13-the-second-aqabah-pledge.txt",
+      "bytes": 11938,
+      "sha256": "08aa77e96bb0bbc9d7a7bd35754ecb9af3b10f859b86bc396af1b3e6c6b2a2f8"
+    },
+    {
+      "path": "chapters/14-the-vanguard-of-migration-in-the-cause-of-allah.txt",
+      "bytes": 5672,
+      "sha256": "eb1655ca955ef4af4a516714e6072855fae1052ac3f0cca460559fac09ddc429"
+    },
+    {
+      "path": "chapters/15-in-an-nadwah-council-house-the-parliament-of-quraish.txt",
+      "bytes": 4078,
+      "sha256": "c0594446e83c7166b513d9b56e70168b2b6f19cf29bc9bd4307de96f8736328c"
+    },
+    {
+      "path": "chapters/16-migration-of-the-prophet-pbuh.txt",
+      "bytes": 20465,
+      "sha256": "d91bd88e71d9afca39b9e6ba16270694cb4a855b0028b53dce4a46ca4843ad28"
+    },
+    {
+      "path": "chapters/17-life-in-madinah.txt",
+      "bytes": 926,
+      "sha256": "e6b4cdcf147a4fab4d29d2d39e30f9c66b1fd04767469e2d574bae050c01902f"
+    },
+    {
+      "path": "chapters/18-the-first-phase-the-status-quo-in-madinah-at-the-time-of-emigration.txt",
+      "bytes": 124958,
+      "sha256": "9acf15e182e4b4bda790c575850e3944f69d977a56893d391a783dbe2745ef4c"
+    },
+    {
+      "path": "chapters/19-the-military-activities-between-badr-and-uhud.txt",
+      "bytes": 25099,
+      "sha256": "8b903176dc540c78f7972188d695355ece15ae84d4705aeb545df461f01295ba"
+    },
+    {
+      "path": "chapters/20-the-battle-of-uhud.txt",
+      "bytes": 104658,
+      "sha256": "838a64ae63d14fa3607e26cddadbeb9e26c2a6f0e2ec9218a238e124ea708cbe"
+    },
+    {
+      "path": "chapters/21-military-platoons-and-missions-between-the-battle-of-uhud-and-the-battle-of-the.txt",
+      "bytes": 28095,
+      "sha256": "4c0aaea4500a4cca675ec7a4dafded988529fe37c3f9dbfbfc5f19a6c3b2663b"
+    },
+    {
+      "path": "chapters/22-al-ahzab-the-confederates-invasion.txt",
+      "bytes": 20028,
+      "sha256": "ce977f0b2f27032c7f61657553d9036237e4d907edefe42545d0af8b69e14ed7"
+    },
+    {
+      "path": "chapters/23-invading-banu-quraiza.txt",
+      "bytes": 13792,
+      "sha256": "1430ed5e601023e99cff75571b2a0194a6729561c8eabab213fbda7aa6015a39"
+    },
+    {
+      "path": "chapters/24-military-activities-continued.txt",
+      "bytes": 5307,
+      "sha256": "5aec7fc3667624660007fbd7d8b29106261a390452bcfbdd0d8834be734f5b06"
+    },
+    {
+      "path": "chapters/25-bani-al-mustaliq-muraisi-ghazwah-sha-ban-6-hijri.txt",
+      "bytes": 14346,
+      "sha256": "983898d92159eae794ffbb45088b75e639171d7f85e354aaef3b4a6059e86389"
+    },
+    {
+      "path": "chapters/26-delegations-and-expeditions-following-al-muraisi-ghazwah.txt",
+      "bytes": 3938,
+      "sha256": "da612b08d222143317e7eded2c39979b80c663dd7e690cba13eb6bbe435dbe2d"
+    },
+    {
+      "path": "chapters/27-al-hudaibiyah-treaty-dhul-qu-dah-6-a-h.txt",
+      "bytes": 23290,
+      "sha256": "1c13dc640bdbae4f4091a51f50965a70bd1aed4d57144f0b9927cc8e6b1e6962"
+    },
+    {
+      "path": "chapters/28-the-second-stage-a-new-phase-of-islamic-action.txt",
+      "bytes": 2495,
+      "sha256": "bb882bf589ec851a941725fe0df31747e6e1f4eb103b9b75e3e017b699722bae"
+    },
+    {
+      "path": "chapters/29-the-prophet-s-plans-to-spread-the-message-of-islam-to-beyond-arabia.txt",
+      "bytes": 25744,
+      "sha256": "75b2480388a69ef3c9d5526b33a34eda0db92f38dd003ee320357f913bb777bb"
+    },
+    {
+      "path": "chapters/30-post-hudaibiyah-hostilities.txt",
+      "bytes": 4149,
+      "sha256": "90172915572c22cca4d8eed4179853c4dd933f0270073d78a2ba6d264959d7d2"
+    },
+    {
+      "path": "chapters/31-the-conquest-of-khaibar-in-moharram-7-a-h.txt",
+      "bytes": 21422,
+      "sha256": "33a19d51564bf8588f45250ba96718416f15f270e4a7171a38d19b3a64cb95ad"
+    },
+    {
+      "path": "chapters/32-sporadic-invasions.txt",
+      "bytes": 7936,
+      "sha256": "ebde42f41e5da0a15264179a5fc73d3fa063f11fbe66dc077837013f9eb953b2"
+    },
+    {
+      "path": "chapters/33-the-compensatory-umrah-lesser-pilgrimage.txt",
+      "bytes": 12213,
+      "sha256": "0a4ed32addfd350be05f7f4d9b711dd0f0ba01c938b46ea06fb970755767e5d1"
+    },
+    {
+      "path": "chapters/34-the-battle-of-mu-tah.txt",
+      "bytes": 3202,
+      "sha256": "3ef679adb94aa511d79e4452aaab0641d2099542dfdeeeac14792d8a12cbc79d"
+    },
+    {
+      "path": "chapters/35-the-conquest-of-makkah.txt",
+      "bytes": 28840,
+      "sha256": "1ce137386344955dee1938092ec87cb5c555f1934d951647f7b4d1da796c226e"
+    },
+    {
+      "path": "chapters/36-the-third-stage-hunain-ghazwah.txt",
+      "bytes": 30729,
+      "sha256": "2ae386c4f71e082dd4d90e3d947c6710b1f205b5f48cd157aec70b8d22380750"
+    },
+    {
+      "path": "chapters/37-missions-and-platoons-after-the-conquest.txt",
+      "bytes": 10766,
+      "sha256": "3de65768917a0c3711086e6d06ce8a86bcd243cc25265c82be21b5d6cd482e4e"
+    },
+    {
+      "path": "chapters/38-the-invasion-of-tabuk-in-rajab-in-the-year-9-a-h.txt",
+      "bytes": 28896,
+      "sha256": "ef457fb8d73cb0ebe563984cc04a5f2c06662957b6ae3829a09307bd2057109d"
+    },
+    {
+      "path": "chapters/39-abu-bakr-r-performs-the-pilgrimage.txt",
+      "bytes": 3432,
+      "sha256": "ef1445be2679b9e594d8433a3876a26919d7d8b851907d91ebd7e285cc7d1ab9"
+    },
+    {
+      "path": "chapters/40-a-meditation-on-the-ghazawat.txt",
+      "bytes": 7334,
+      "sha256": "e863ee4bdaafd01277d189a5f1bf0f6d043764203d325dc75dff229de0530cbe"
+    },
+    {
+      "path": "chapters/41-people-embrace-the-religion-of-allah-in-large-crowds.txt",
+      "bytes": 2909,
+      "sha256": "fa08ce1170ccb542a1f328462ea53d2a61a6d35c114390e51664280f52c1d0b4"
+    },
+    {
+      "path": "chapters/42-the-delegations.txt",
+      "bytes": 31718,
+      "sha256": "22e6d37e7b12a9ddc271f025a724305cb0e041c3999ff3ae9a6547e4a630d0c6"
+    },
+    {
+      "path": "chapters/43-the-success-and-impact-of-the-call.txt",
+      "bytes": 6327,
+      "sha256": "7844b98f3824fc893e524c983f49cd5569121645666f0e0eeee90a0199781cfb"
+    },
+    {
+      "path": "chapters/44-the-farewell-pilgrimage.txt",
+      "bytes": 14102,
+      "sha256": "5c04ce3ea8878e848b5bf8b0743f64845d5a6d9e53ab4ce10cedb9098e66eea1"
+    },
+    {
+      "path": "chapters/45-the-last-expeditions.txt",
+      "bytes": 2186,
+      "sha256": "fda88887ada97df7dfea311b1e23763c5076967c2c4047ee0e47b71d97777f7b"
+    },
+    {
+      "path": "chapters/46-the-journey-to-allah-the-sublime.txt",
+      "bytes": 20157,
+      "sha256": "998bf01398173e377f1000241eb2b490dd8c13e3adf73de96945c1fc8ba1b87f"
+    },
+    {
+      "path": "chapters/47-the-prophet-household.txt",
+      "bytes": 19020,
+      "sha256": "283150ddca4f5c30ec29884f6657d332f13afdcc51b056a767a588ecc2bac33a"
+    },
+    {
+      "path": "chapters/48-the-prophet-pbuh-attributes-and-manners.txt",
+      "bytes": 23659,
+      "sha256": "b559af5d70a3ac86323a12f345adf72f0f8d0e625371160d7b5396167cad9ab6"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1097621,
+      "sha256": "48a0f30ddf3f9b3523a4e0fa236e5528551b1dae584a9615d335b694d8d6a61a"
+    },
+    {
+      "path": "source.sqlite3",
+      "bytes": 1119232,
+      "sha256": "20a6244bbbdce36595554ada40ea14a3e872fa7c3d9abb62e0481b065a18869d"
+    }
+  ]
+}
